@@ -1,8 +1,9 @@
 from interface_command import ICommand
 
 class CommandGetBeer(ICommand):
-    def __init__(self, receiver):
+    def __init__(self, receiver, obj):
         self._receiver = receiver
+        self._obj = obj
 
-    def execute(self):
-        self._receiver.run_command_GetBeer()    
+    def execute(self, *obj):
+        self._receiver.run_command_GetBeer(self._obj)   
