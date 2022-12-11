@@ -1,9 +1,16 @@
-#RECEIVER - USER CODE GO IN HERE?
+from data_fridge import Fridge
+
+#RECEIVER
 #====================================
-class BenReceiver:
+class BenReceiver():
+
+    #def __init__(self):
+
+
     @staticmethod
     def run_command_DoorClose():
         print("Ran Command - run_command_DoorClose")
+
 
     @staticmethod
     def run_command_DoorOpen():

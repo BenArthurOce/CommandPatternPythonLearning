@@ -6,6 +6,9 @@ from command_door_close import CommandDoorClose
 from command_get_beer import CommandGetBeer
 from command_get_onion import CommandGetOnion
 from command_get_soda import CommandGetSoda
+from data_fridge import Fridge
+
+TheFridge = Fridge(iBeers=6, iOnions=10, iSodas=8)
 
 # Create a receiver
 Ben = BenReceiver()
@@ -28,8 +31,9 @@ BensDad.register("Soda",GET_SODA)
 
 # Execute the commands that are registered on the Invoker
 BensDad.execute("Beer")
-BensDad.execute("Soda")
+print("Beer Remaining: {} \n".format(TheFridge.iBeers))
 
+BensDad.execute("Soda")
 
 
 

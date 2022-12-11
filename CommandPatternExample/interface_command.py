@@ -6,5 +6,5 @@ class ICommand(metaclass=ABCMeta):  # pylint: disable=too-few-public-methods
 
     @staticmethod
     @abstractmethod
-    def execute():
+    def execute(self):
         "The required execute method that all command objects will use"
