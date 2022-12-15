@@ -1,6 +1,6 @@
 class Fridge:
-    #def __init__(self, boolDoor: bool, iBeers: int, iOnions: int, iSodas: int):
-    def __init__(self, iBeers: int, iOnions: int, iSodas: int):
+    def __init__(self, sObjectName: str, iBeers: int, iOnions: int, iSodas: int):
+        self.sObjectName = sObjectName
         self.boolDoorOpen = False
         self.iBeers = iBeers
         self.iOnions = iOnions
