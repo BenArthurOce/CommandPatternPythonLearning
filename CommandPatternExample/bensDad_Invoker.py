@@ -19,7 +19,7 @@ class BensDadInvoker:
             self._commands[command_name].execute()
             self._history.append((time.time(), command_name))
         else:
-            print(f"Command [{command_name}] not recognised")
+            input(f"Command [{command_name}] not recognised \n Type any input to continue")
 
     #Replay the last n commands executed
     def replay_last(self, number_of_commands):
